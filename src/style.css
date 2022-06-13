@@ -1,0 +1,90 @@
+.card:hover{
+	-webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	transition: all .3s;
+}
+
+.rours{
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.titilePage{
+	margin: 50px 0px;
+	text-align: center;
+}
+
+.swiper {
+	margin: 30px 0px;
+	width: 100%;
+	height: 500px;
+}
+
+.swiper-slide img{
+	width: 100%;
+}
+
+.desc{
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.desc p{
+	max-width: 700px;
+}
+
+form{
+	margin-top: 20px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.reviews{
+	display: flex;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+
+.title{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.form-select{
+	max-width: 150px;
+}
+
+#carouselExampleControls{
+	max-height: 600px;
+	overflow: hidden;
+}
+
+#carouselExampleControlsNoTouching{
+	max-height: 500px;
+	overflow: hidden;
+}
+
+.accordion-title{
+	margin-top: 30px;
+}
+
+.accordion{
+	margin-top: 20px;
+}
+
+.numberDay{
+	margin-right: 5px;
+	background-color: aliceblue;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+.card-text.tour{
+	overflow-y: scroll;
+	max-height: 200px;
+}

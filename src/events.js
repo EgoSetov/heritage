@@ -1,3 +1,4 @@
+// импорт зависимостей
 import { v4 as uuidv4 } from 'uuid';
 import { Client, Route, Review } from './db.js'
 import { htmlEls, modalDevops } from './ather.js'
@@ -13,6 +14,7 @@ const {
 	roursEl
 } = htmlEls
 
+// функция позволяющая добавить новый элемент в коллекцию Routes
 const addRoute = async (data) => {
 	try {
 		const {
@@ -40,6 +42,7 @@ const addRoute = async (data) => {
 
 }
 
+// функция позволяющая добавить новый элемент в коллекцию Clients
 const addClients = async (data) => {
 	try {
 		const {
@@ -63,6 +66,7 @@ const addClients = async (data) => {
 	}
 }
 
+// функция позволяющая добавить новый элемент в коллекцию Reviews
 const addReviews = async (data) => {
 	try {
 		const {
@@ -85,6 +89,8 @@ const addReviews = async (data) => {
 	}
 }
 
+
+// Обработки событий submit у html форм
 formClients.addEventListener('submit', async (e) => {
 	const data = new FormData(formClients)
 

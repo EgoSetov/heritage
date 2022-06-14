@@ -1,8 +1,10 @@
+// импорт зависимостей
 import { myModal, htmlEls } from './ather.js'
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { Route, db, Review } from './db.js'
 const { roursEl, modalRoute, reviews } = htmlEls
 
+// функция позволяющая получить данные из коллекции Routes и занести их в DOM дерево
 const getRoutes = async () => {
 	try {
 		await Route.get()
@@ -106,6 +108,7 @@ const getRoutes = async () => {
 
 }
 
+// функция позволяющая получить данные из коллекции Reviews и занести их в DOM дерево
 const getReviews = async () => {
 	try {
 		await Review.get()
@@ -135,6 +138,6 @@ const getReviews = async () => {
 	}
 }
 
-
+// вызов функций, чтобы получить все данные сразу же
 getRoutes()
 getReviews()

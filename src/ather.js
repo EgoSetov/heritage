@@ -1,11 +1,14 @@
+// инициализация модального окна, для дальнейшего взаимодействия с ним, скрыть/показать
 const myModal = new bootstrap.Modal('#exampleModal', {
 	keyboard: false
 })
 
+// инициализация модального окна, для дальнейшего взаимодействия с ним, скрыть/показать
 const modalDevops = new bootstrap.Modal('#forDevops', {
 	keyboard: false
 })
 
+// занескннния элементов DOM дерева в переменные, для удобства взаимодействия
 const roursEl = document.querySelector('.rours')
 const modalRoute = document.querySelector('.modal-xl')
 const modalforDevops = document.querySelector('#forDevops')
@@ -33,10 +36,12 @@ const htmlEls = {
 	btnForDevops
 }
 
+// обработка события Нажатия на кнопку
 btnForDevops.addEventListener('click', async () => {
 	modalDevops.show()
 })
 
+// экспорт переменных
 export {
 	myModal,
 	modalDevops,
